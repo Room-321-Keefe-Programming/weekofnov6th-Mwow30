@@ -34,9 +34,9 @@
             this.rdoTempConverter2 = new System.Windows.Forms.RadioButton();
             this.grpTempConverter = new System.Windows.Forms.GroupBox();
             this.cmbMoneyConverter = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTemp = new System.Windows.Forms.Button();
             this.rtbOutput = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnMoney = new System.Windows.Forms.Button();
             this.txtInput2 = new System.Windows.Forms.TextBox();
             this.txtInput1 = new System.Windows.Forms.TextBox();
             this.lblInput1 = new System.Windows.Forms.Label();
@@ -44,227 +44,266 @@
             this.lblDistanceConverter = new System.Windows.Forms.Label();
             this.chkMeterToInch = new System.Windows.Forms.CheckBox();
             this.chkMileToKilo = new System.Windows.Forms.CheckBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnDistance1 = new System.Windows.Forms.Button();
             this.chkInchToMeter = new System.Windows.Forms.CheckBox();
             this.chkKiloToMiles = new System.Windows.Forms.CheckBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnDistance2 = new System.Windows.Forms.Button();
             this.grpTempConverter.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTemperatureConverter
             // 
             this.lblTemperatureConverter.AutoSize = true;
-            this.lblTemperatureConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTemperatureConverter.Location = new System.Drawing.Point(42, 68);
+            this.lblTemperatureConverter.BackColor = System.Drawing.Color.MediumPurple;
+            this.lblTemperatureConverter.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTemperatureConverter.Location = new System.Drawing.Point(65, 50);
             this.lblTemperatureConverter.Name = "lblTemperatureConverter";
-            this.lblTemperatureConverter.Size = new System.Drawing.Size(236, 26);
+            this.lblTemperatureConverter.Size = new System.Drawing.Size(252, 30);
             this.lblTemperatureConverter.TabIndex = 0;
             this.lblTemperatureConverter.Text = "Temperature Converter";
+            this.lblTemperatureConverter.Click += new System.EventHandler(this.lblTemperatureConverter_Click);
             // 
             // lblMoneyConvert
             // 
             this.lblMoneyConvert.AutoSize = true;
-            this.lblMoneyConvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoneyConvert.Location = new System.Drawing.Point(42, 142);
+            this.lblMoneyConvert.BackColor = System.Drawing.Color.MediumPurple;
+            this.lblMoneyConvert.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoneyConvert.Location = new System.Drawing.Point(87, 160);
             this.lblMoneyConvert.Name = "lblMoneyConvert";
-            this.lblMoneyConvert.Size = new System.Drawing.Size(178, 26);
+            this.lblMoneyConvert.Size = new System.Drawing.Size(186, 30);
             this.lblMoneyConvert.TabIndex = 1;
             this.lblMoneyConvert.Text = "Money Converter";
+            this.lblMoneyConvert.Click += new System.EventHandler(this.lblMoneyConvert_Click);
             // 
             // rdoTempConverter1
             // 
             this.rdoTempConverter1.AutoSize = true;
-            this.rdoTempConverter1.Location = new System.Drawing.Point(18, 31);
+            this.rdoTempConverter1.Location = new System.Drawing.Point(6, 35);
             this.rdoTempConverter1.Name = "rdoTempConverter1";
-            this.rdoTempConverter1.Size = new System.Drawing.Size(196, 28);
+            this.rdoTempConverter1.Size = new System.Drawing.Size(219, 31);
             this.rdoTempConverter1.TabIndex = 2;
             this.rdoTempConverter1.TabStop = true;
             this.rdoTempConverter1.Text = "Celsuis - Fahrenheit";
             this.rdoTempConverter1.UseVisualStyleBackColor = true;
+            this.rdoTempConverter1.CheckedChanged += new System.EventHandler(this.rdoTempConverter1_CheckedChanged);
             // 
             // rdoTempConverter2
             // 
             this.rdoTempConverter2.AutoSize = true;
-            this.rdoTempConverter2.Location = new System.Drawing.Point(234, 31);
+            this.rdoTempConverter2.Location = new System.Drawing.Point(234, 33);
             this.rdoTempConverter2.Name = "rdoTempConverter2";
-            this.rdoTempConverter2.Size = new System.Drawing.Size(196, 28);
+            this.rdoTempConverter2.Size = new System.Drawing.Size(219, 31);
             this.rdoTempConverter2.TabIndex = 3;
             this.rdoTempConverter2.TabStop = true;
             this.rdoTempConverter2.Text = "Fahrenheit - Celsius";
             this.rdoTempConverter2.UseVisualStyleBackColor = true;
+            this.rdoTempConverter2.CheckedChanged += new System.EventHandler(this.rdoTempConverter2_CheckedChanged);
             // 
             // grpTempConverter
             // 
+            this.grpTempConverter.BackColor = System.Drawing.Color.MediumPurple;
             this.grpTempConverter.Controls.Add(this.rdoTempConverter1);
             this.grpTempConverter.Controls.Add(this.rdoTempConverter2);
-            this.grpTempConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpTempConverter.Location = new System.Drawing.Point(321, 38);
+            this.grpTempConverter.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpTempConverter.Location = new System.Drawing.Point(353, 35);
             this.grpTempConverter.Name = "grpTempConverter";
-            this.grpTempConverter.Size = new System.Drawing.Size(458, 77);
+            this.grpTempConverter.Size = new System.Drawing.Size(459, 68);
             this.grpTempConverter.TabIndex = 4;
             this.grpTempConverter.TabStop = false;
             this.grpTempConverter.Tag = "";
             this.grpTempConverter.Text = "Convert";
+            this.grpTempConverter.Enter += new System.EventHandler(this.grpTempConverter_Enter);
             // 
             // cmbMoneyConverter
             // 
-            this.cmbMoneyConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMoneyConverter.BackColor = System.Drawing.Color.MediumPurple;
+            this.cmbMoneyConverter.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMoneyConverter.FormattingEnabled = true;
-            this.cmbMoneyConverter.Location = new System.Drawing.Point(321, 142);
+            this.cmbMoneyConverter.Location = new System.Drawing.Point(348, 160);
             this.cmbMoneyConverter.Name = "cmbMoneyConverter";
-            this.cmbMoneyConverter.Size = new System.Drawing.Size(121, 32);
+            this.cmbMoneyConverter.Size = new System.Drawing.Size(230, 35);
             this.cmbMoneyConverter.TabIndex = 5;
+            this.cmbMoneyConverter.SelectedIndexChanged += new System.EventHandler(this.cmbMoneyConverter_SelectedIndexChanged);
             // 
-            // button1
+            // btnTemp
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(846, 82);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 33);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTemp.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnTemp.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTemp.Location = new System.Drawing.Point(839, 50);
+            this.btnTemp.Name = "btnTemp";
+            this.btnTemp.Size = new System.Drawing.Size(188, 41);
+            this.btnTemp.TabIndex = 6;
+            this.btnTemp.Text = " Temp Button";
+            this.btnTemp.UseVisualStyleBackColor = false;
+            this.btnTemp.Click += new System.EventHandler(this.btnTemp_Click);
             // 
             // rtbOutput
             // 
-            this.rtbOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbOutput.Location = new System.Drawing.Point(47, 478);
+            this.rtbOutput.BackColor = System.Drawing.Color.MediumPurple;
+            this.rtbOutput.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbOutput.Location = new System.Drawing.Point(12, 507);
             this.rtbOutput.Name = "rtbOutput";
-            this.rtbOutput.Size = new System.Drawing.Size(964, 148);
+            this.rtbOutput.Size = new System.Drawing.Size(1058, 202);
             this.rtbOutput.TabIndex = 7;
             this.rtbOutput.Text = "";
+            this.rtbOutput.TextChanged += new System.EventHandler(this.rtbOutput_TextChanged);
             // 
-            // button2
+            // btnMoney
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(846, 136);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 32);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnMoney.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnMoney.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnMoney.Location = new System.Drawing.Point(589, 159);
+            this.btnMoney.Name = "btnMoney";
+            this.btnMoney.Size = new System.Drawing.Size(148, 35);
+            this.btnMoney.TabIndex = 8;
+            this.btnMoney.Text = "Money Button";
+            this.btnMoney.UseVisualStyleBackColor = false;
+            this.btnMoney.Click += new System.EventHandler(this.btnMoney_Click);
             // 
             // txtInput2
             // 
-            this.txtInput2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInput2.Location = new System.Drawing.Point(321, 411);
+            this.txtInput2.BackColor = System.Drawing.Color.MediumPurple;
+            this.txtInput2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInput2.Location = new System.Drawing.Point(48, 442);
             this.txtInput2.Name = "txtInput2";
-            this.txtInput2.Size = new System.Drawing.Size(169, 29);
+            this.txtInput2.Size = new System.Drawing.Size(169, 37);
             this.txtInput2.TabIndex = 9;
+            this.txtInput2.TextChanged += new System.EventHandler(this.txtInput2_TextChanged);
             // 
             // txtInput1
             // 
-            this.txtInput1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInput1.Location = new System.Drawing.Point(47, 411);
+            this.txtInput1.BackColor = System.Drawing.Color.MediumPurple;
+            this.txtInput1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInput1.Location = new System.Drawing.Point(313, 442);
             this.txtInput1.Name = "txtInput1";
-            this.txtInput1.Size = new System.Drawing.Size(173, 29);
+            this.txtInput1.Size = new System.Drawing.Size(173, 37);
             this.txtInput1.TabIndex = 10;
+            this.txtInput1.TextChanged += new System.EventHandler(this.txtInput1_TextChanged);
             // 
             // lblInput1
             // 
             this.lblInput1.AutoSize = true;
-            this.lblInput1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInput1.Location = new System.Drawing.Point(43, 372);
+            this.lblInput1.BackColor = System.Drawing.Color.MediumPurple;
+            this.lblInput1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInput1.Location = new System.Drawing.Point(43, 398);
             this.lblInput1.Name = "lblInput1";
-            this.lblInput1.Size = new System.Drawing.Size(61, 24);
+            this.lblInput1.Size = new System.Drawing.Size(73, 27);
             this.lblInput1.TabIndex = 11;
             this.lblInput1.Text = "Input1";
+            this.lblInput1.Click += new System.EventHandler(this.lblInput1_Click);
             // 
             // lblInput2
             // 
             this.lblInput2.AutoSize = true;
-            this.lblInput2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInput2.Location = new System.Drawing.Point(317, 372);
+            this.lblInput2.BackColor = System.Drawing.Color.MediumPurple;
+            this.lblInput2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInput2.Location = new System.Drawing.Point(308, 398);
             this.lblInput2.Name = "lblInput2";
-            this.lblInput2.Size = new System.Drawing.Size(61, 24);
+            this.lblInput2.Size = new System.Drawing.Size(73, 27);
             this.lblInput2.TabIndex = 12;
             this.lblInput2.Text = "Input2";
+            this.lblInput2.Click += new System.EventHandler(this.lblInput2_Click);
             // 
             // lblDistanceConverter
             // 
             this.lblDistanceConverter.AutoSize = true;
-            this.lblDistanceConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDistanceConverter.Location = new System.Drawing.Point(42, 243);
+            this.lblDistanceConverter.BackColor = System.Drawing.Color.MediumPurple;
+            this.lblDistanceConverter.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblDistanceConverter.Location = new System.Drawing.Point(87, 262);
             this.lblDistanceConverter.Name = "lblDistanceConverter";
-            this.lblDistanceConverter.Size = new System.Drawing.Size(196, 25);
+            this.lblDistanceConverter.Size = new System.Drawing.Size(208, 30);
             this.lblDistanceConverter.TabIndex = 13;
             this.lblDistanceConverter.Tag = "";
             this.lblDistanceConverter.Text = "Distance Converter";
+            this.lblDistanceConverter.Click += new System.EventHandler(this.lblDistanceConverter_Click);
             // 
             // chkMeterToInch
             // 
             this.chkMeterToInch.AutoSize = true;
-            this.chkMeterToInch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkMeterToInch.Location = new System.Drawing.Point(569, 240);
+            this.chkMeterToInch.BackColor = System.Drawing.Color.MediumPurple;
+            this.chkMeterToInch.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold);
+            this.chkMeterToInch.Location = new System.Drawing.Point(601, 261);
             this.chkMeterToInch.Name = "chkMeterToInch";
-            this.chkMeterToInch.Size = new System.Drawing.Size(167, 28);
+            this.chkMeterToInch.Size = new System.Drawing.Size(211, 34);
             this.chkMeterToInch.TabIndex = 14;
             this.chkMeterToInch.Text = "Meters to Inches";
-            this.chkMeterToInch.UseVisualStyleBackColor = true;
+            this.chkMeterToInch.UseVisualStyleBackColor = false;
+            this.chkMeterToInch.CheckedChanged += new System.EventHandler(this.chkMeterToInch_CheckedChanged);
             // 
             // chkMileToKilo
             // 
             this.chkMileToKilo.AutoSize = true;
-            this.chkMileToKilo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkMileToKilo.Location = new System.Drawing.Point(321, 240);
+            this.chkMileToKilo.BackColor = System.Drawing.Color.MediumPurple;
+            this.chkMileToKilo.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold);
+            this.chkMileToKilo.Location = new System.Drawing.Point(348, 261);
             this.chkMileToKilo.Name = "chkMileToKilo";
-            this.chkMileToKilo.Size = new System.Drawing.Size(186, 28);
+            this.chkMileToKilo.Size = new System.Drawing.Size(230, 34);
             this.chkMileToKilo.TabIndex = 15;
             this.chkMileToKilo.Tag = "";
             this.chkMileToKilo.Text = "Miles to Kilometers";
-            this.chkMileToKilo.UseVisualStyleBackColor = true;
+            this.chkMileToKilo.UseVisualStyleBackColor = false;
+            this.chkMileToKilo.CheckedChanged += new System.EventHandler(this.chkMileToKilo_CheckedChanged);
             // 
-            // button3
+            // btnDistance1
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(846, 243);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 31);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDistance1.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnDistance1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnDistance1.Location = new System.Drawing.Point(839, 258);
+            this.btnDistance1.Name = "btnDistance1";
+            this.btnDistance1.Size = new System.Drawing.Size(188, 39);
+            this.btnDistance1.TabIndex = 16;
+            this.btnDistance1.Text = "Distance Button 1";
+            this.btnDistance1.UseVisualStyleBackColor = false;
+            this.btnDistance1.Click += new System.EventHandler(this.btnDistance1_Click);
             // 
             // chkInchToMeter
             // 
             this.chkInchToMeter.AutoSize = true;
-            this.chkInchToMeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkInchToMeter.Location = new System.Drawing.Point(569, 290);
+            this.chkInchToMeter.BackColor = System.Drawing.Color.MediumPurple;
+            this.chkInchToMeter.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold);
+            this.chkInchToMeter.Location = new System.Drawing.Point(601, 340);
             this.chkInchToMeter.Name = "chkInchToMeter";
-            this.chkInchToMeter.Size = new System.Drawing.Size(167, 28);
+            this.chkInchToMeter.Size = new System.Drawing.Size(211, 34);
             this.chkInchToMeter.TabIndex = 17;
             this.chkInchToMeter.Text = "Inches to Meters";
-            this.chkInchToMeter.UseVisualStyleBackColor = true;
+            this.chkInchToMeter.UseVisualStyleBackColor = false;
+            this.chkInchToMeter.CheckedChanged += new System.EventHandler(this.chkInchToMeter_CheckedChanged);
             // 
             // chkKiloToMiles
             // 
             this.chkKiloToMiles.AutoSize = true;
-            this.chkKiloToMiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkKiloToMiles.Location = new System.Drawing.Point(321, 290);
+            this.chkKiloToMiles.BackColor = System.Drawing.Color.MediumPurple;
+            this.chkKiloToMiles.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold);
+            this.chkKiloToMiles.Location = new System.Drawing.Point(348, 340);
             this.chkKiloToMiles.Name = "chkKiloToMiles";
-            this.chkKiloToMiles.Size = new System.Drawing.Size(186, 28);
+            this.chkKiloToMiles.Size = new System.Drawing.Size(230, 34);
             this.chkKiloToMiles.TabIndex = 18;
             this.chkKiloToMiles.Text = "Kilometers to Miles";
-            this.chkKiloToMiles.UseVisualStyleBackColor = true;
+            this.chkKiloToMiles.UseVisualStyleBackColor = false;
+            this.chkKiloToMiles.CheckedChanged += new System.EventHandler(this.chkKiloToMiles_CheckedChanged);
             // 
-            // button4
+            // btnDistance2
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(846, 287);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 31);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDistance2.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnDistance2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnDistance2.Location = new System.Drawing.Point(839, 340);
+            this.btnDistance2.Name = "btnDistance2";
+            this.btnDistance2.Size = new System.Drawing.Size(188, 39);
+            this.btnDistance2.TabIndex = 19;
+            this.btnDistance2.Text = "Distance Button 2";
+            this.btnDistance2.UseVisualStyleBackColor = false;
+            this.btnDistance2.Click += new System.EventHandler(this.btnDistance2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 648);
-            this.Controls.Add(this.button4);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1082, 756);
+            this.Controls.Add(this.btnDistance2);
             this.Controls.Add(this.chkKiloToMiles);
             this.Controls.Add(this.chkInchToMeter);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnDistance1);
             this.Controls.Add(this.chkMileToKilo);
             this.Controls.Add(this.chkMeterToInch);
             this.Controls.Add(this.lblDistanceConverter);
@@ -272,15 +311,16 @@
             this.Controls.Add(this.lblInput1);
             this.Controls.Add(this.txtInput1);
             this.Controls.Add(this.txtInput2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnMoney);
             this.Controls.Add(this.rtbOutput);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTemp);
             this.Controls.Add(this.cmbMoneyConverter);
             this.Controls.Add(this.grpTempConverter);
             this.Controls.Add(this.lblMoneyConvert);
             this.Controls.Add(this.lblTemperatureConverter);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Week of November 6th";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.grpTempConverter.ResumeLayout(false);
             this.grpTempConverter.PerformLayout();
             this.ResumeLayout(false);
@@ -296,9 +336,9 @@
         private System.Windows.Forms.RadioButton rdoTempConverter2;
         private System.Windows.Forms.GroupBox grpTempConverter;
         private System.Windows.Forms.ComboBox cmbMoneyConverter;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTemp;
         private System.Windows.Forms.RichTextBox rtbOutput;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMoney;
         private System.Windows.Forms.TextBox txtInput2;
         private System.Windows.Forms.TextBox txtInput1;
         private System.Windows.Forms.Label lblInput1;
@@ -306,10 +346,10 @@
         private System.Windows.Forms.Label lblDistanceConverter;
         private System.Windows.Forms.CheckBox chkMeterToInch;
         private System.Windows.Forms.CheckBox chkMileToKilo;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnDistance1;
         private System.Windows.Forms.CheckBox chkInchToMeter;
         private System.Windows.Forms.CheckBox chkKiloToMiles;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnDistance2;
     }
 }
 
